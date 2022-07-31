@@ -1,9 +1,61 @@
+//Identifier:
+/*
+   classname
+   methodname / function name
+   variable name / properties 
+   ...........................
+
+   1.   we can take 
+
+   a to z 
+   A to Z
+
+   0 to 9
+
+   _ (underscore)
+
+   $ (dollar)
+
+   Except these symboles , if we are using any other sumbols then we will get compile time error.
+
+
+   2. We can not start with digits.
+
+       name1
+	   name_1
+	   1name---wrong
+
+	3.java identifiers are case sensitive.
+
+	   int   age=21;
+	   int   Age=22;
+
+
+	 4. We can take any length for java identifiers.
+
+	    String  employeename="rajesh";
+
+		String  empppppppppppppppppppppppppppppppppppppployyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyeenameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee="rajesh";
+
+   we should take smallest  and meaningful.
+
+
+
+  
+
+*/
+
 class TestProgram 
 {
 	public static void main(String[] args) 
 	{
-		System.out.println("Hello World!");
-		System.out.println("Hello World!");
-		System.out.println("Hello World!");
+         
+		 int   age=21;
+
+	     int   Age=22;
+
+		 System.out.println(age);
+		 System.out.println(Age);
+		
 	}
 }
