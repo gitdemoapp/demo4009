@@ -1,0 +1,55 @@
+/*
+   Literals:
+   --------
+
+  
+     1. Integral literals               30987, 101, 111, 
+	 2. floating point  literals          90.90 , 84.30
+	 3. char  literals                   a  , b ,c  , d 
+	 4. boolean  literals               true  , false
+	 5. String literals                 Raja , kanpur , 
+
+
+
+	 Integral integral:        allowed digits               prefix          
+	 -----------------
+	 decimal form--------------->0 1 2 3 4 ..9,                                   10                                             
+	 octal form  --------------->0 to 7                        0                  8
+	 hexadecimal form-----------> 0 to 9 , a to f , A to F      0x | 0X           16
+	 binary form  --------------->  0  , 1                       0b | 0B           2
+
+
+	  2. floating point  literals:
+	  ===============================
+
+	  a) decimal form
+
+	  b) by default--->double
+
+	  c) float  --->f | F
+
+	  float  a=  10.0f;  4
+
+	  double  a=  10.0;  8
+
+	  double  a=10.0d;
+
+
+	  d)
+
+	  integral values----->float  | double
+
+	  10 , 20 
+*/
+
+
+class LiteralsDemo1
+{
+	public static void main(String[] args){
+
+            double d=10.0;
+
+		   System.out.println(d);
+		 
+	}
+}
