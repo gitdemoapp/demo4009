@@ -1,29 +1,74 @@
-class Employee
+class Employee 
 {
-	
-	 public  static  void main(String     []a){
+	 String name;
+	 int salary;
+	 String dept;
+	 static String companyName;
+	 int empId;
+	 static String companyAddress;
 
-	  
-	  System.out.println("This is a valid main method  ==>String[]");
 
-		
+	void login(String userName,int password){
+
+	     System.out.println("Hi  "+name+ " you have logged in successfully and your employee id is "+empId +"user name  is "+userName +" password is "+password);
 	}
 
+	void  viewDetails(){
+	   System.out.println(this.hashCode());
+
+	    System.out.println("Employee name is :: "+name);
+		System.out.println("Employee slaray is :: "+salary);
+		System.out.println("Employee dept is :: "+dept);
+		System.out.println("Employee company name is :: "+companyName);
+		System.out.println("Employee id is :: "+empId);
+		System.out.println("Employee company Address is :: "+companyAddress);
+
+
+	}
+
+	void logout(){
+	   System.out.println("Hi "+name +" you have logged out successfully ");
+	}
+    
+	void viewSalarySlip(){
+	    System.out.println("Hi "+name +" wait for your salary slip...uploading soon");
+	}
+	
+	public static void main(String[] args){
+	   
+	    Employee  employee1=new Employee();//
+
+	    Employee  employee2=new Employee();//
+
+		employee1.name="Raja";
+		employee1.companyName="Bytecode It Solutions";
+		employee1.salary=20000;
+		employee1.dept="WM";
+		employee1.empId=111;
+		employee1.companyAddress="54 Lakhanpur Kanpur";
+
+
+		employee2.name="Rani";
+		employee2.salary=30000;
+		employee2.dept="HR";
+		employee2.empId=222;
+		
+
+		employee1.viewDetails();//function calling
+
+		employee2.viewDetails();
+
+		employee1.login("abc@gmail.com",123456);
+
+		employee2.login("pqr@gmail.com",123467);
+
+		employee2.logout();
+
+		employee1.logout();
+
+		employee1.viewSalarySlip();
+
+		employee2.viewSalarySlip();
+	
+	}
 }
-
-/*
-1.  in the place of public static we can take  static public  
-
-2.  args==>
-
-3.  []==>...
-
-4. strictfp synchronized final 
-
-5.  
-
-6. 
- 
-
-*/
-
