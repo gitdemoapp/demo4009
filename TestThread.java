@@ -1,0 +1,7 @@
+class TestThread 
+{
+	class InnerClass
+	{
+
+	}
+}

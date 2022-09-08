@@ -1,0 +1,25 @@
+abstract class Parent8
+{
+	abstract void m1();
+
+	void  m2(){
+	
+	}
+}
+
+abstract class Child8 extends Parent8
+{
+	abstract void  m1();
+
+}
+class Child88 extends Child8
+{
+
+}
+class OverDemo8 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

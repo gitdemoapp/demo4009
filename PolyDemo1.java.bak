@@ -1,0 +1,34 @@
+/*
+   Inheritance  (IS-A  Relationship)
+   ----------------------------------
+
+   HAS-A Realtionship:
+   -------------------
+
+
+
+
+*/
+
+class Parent
+{
+	void marry(){
+	   System.out.println("You should marry according parent choice");
+	}
+}
+
+class Child extends Parent
+{
+    void marry(){
+	   System.out.println("I will marry according to my choice");
+	}
+
+}
+
+class PolyDemo1
+{
+	public static void main(String[] args){
+	     Child  c1=new Child();
+		 c1.marry();
+	}
+}

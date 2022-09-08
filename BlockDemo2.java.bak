@@ -1,0 +1,72 @@
+class TestBlock2
+{
+
+		static{
+	    System.out.println("this is static block from TestBlock2===1");
+	    }
+
+	{
+	     System.out.println("this is non static block from TestBlock2===1");
+	}
+
+	static{
+	    System.out.println("this is static block from TestBlock2===2");
+	    }
+
+	{
+	     System.out.println("this is non static block from TestBlock2===2");
+	}
+}
+
+
+
+
+
+class BlockDemo2 
+{
+	static{
+	    System.out.println("this is static block from BlockDemo2===1");
+	}
+
+	{
+	    System.out.println("this is non static block from BlockDemo2===1");
+	
+	}
+
+	static{
+	    System.out.println("this is static block from BlockDemo2===2");
+	}
+
+	{
+	    System.out.println("this is non static block from BlockDemo2===2");
+	
+	}
+
+	static{
+	    System.out.println("this is static block from BlockDemo2====3");
+	}
+
+	public static void main(String[] args)  throws ClassNotFoundException
+	{
+		/*
+		Class.forName("TestBlock2");
+		Class.forName("TestBlock2");
+		Class.forName("TestBlock2");
+		Class.forName("TestBlock2");
+
+		BlockDemo2  obj1=new BlockDemo2();
+		BlockDemo2  obj2=new BlockDemo2();
+		BlockDemo2  obj3=new BlockDemo2();
+		BlockDemo2  obj4=new BlockDemo2();
+
+		TestBlock2  obj5=new TestBlock2();
+		TestBlock2  obj6=new TestBlock2();
+		*/
+
+		BlockDemo2  obj1=new BlockDemo2();
+		BlockDemo2  obj2=new BlockDemo2();
+
+		TestBlock2  obj3=new TestBlock2();
+		TestBlock2  obj4=new TestBlock2();
+	}
+}

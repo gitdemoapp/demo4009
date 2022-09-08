@@ -4,11 +4,6 @@ class  Test
 
 	String name;//null
 
-	Test(int  rollNumber,String name){
-	    this.rollNumber=rollNumber;
-		this.name=name;
-	}
-
 	void m1(){
 	  System.out.println("Name of student "+this.hashCode() +" is "+name);
 	  System.out.println("Roll Number of student "+this.hashCode() +" is "+rollNumber);
@@ -16,12 +11,12 @@ class  Test
 
 	public static void main(String[] args){
 	    
-          Test  t1=new Test(111,"ramesh");
+          Test  t1=new Test();
 
 		 
 
 
-		   Test  t2=new Test(222,"suresh");
+		   Test  t2=new Test();
 
 		 
 

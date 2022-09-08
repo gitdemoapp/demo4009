@@ -1,0 +1,38 @@
+
+/*
+
+   Overriding:
+   -----------
+
+   Why?
+
+Case-1:
+-------
+
+*/
+
+class Parent
+{
+	final void  marry(){
+	    System.out.println("we should marry according to parent choice");
+		
+	}
+}
+
+class Child1 extends Parent
+{
+	void marry(){
+	   System.out.println("we should drink water , softdrink and beer");
+	   
+	}
+}
+
+
+
+class OverDemo1 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

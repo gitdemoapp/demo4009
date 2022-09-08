@@ -1,0 +1,21 @@
+class Test2
+{
+	
+
+    {
+	    System.out.println("This is non static block from test2");
+	}
+
+}
+
+
+class Test1 
+{
+	static{
+	    System.out.println("This is static block from test1");
+	}
+	public static void main(String[] args) throws ClassNotFoundException
+	{
+		 Test2  t1=new Test2();
+	}
+}

@@ -1,0 +1,7 @@
+class TestThread 
+{
+	public static void main(String[] args) 
+	{
+		Thread  t1=Thread.currentThread();
+	}
+}

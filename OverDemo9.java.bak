@@ -1,0 +1,22 @@
+class Parent9
+{
+	Object m1(){
+	   return null;
+    System.out.println("Hello World!");
+
+	}
+}
+
+class Child9 extends Parent9
+{
+    StringBuffer m1(){
+	   return null;
+	}
+}
+class  OverDemo9
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

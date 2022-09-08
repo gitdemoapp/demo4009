@@ -1,9 +1,7 @@
-class FirstProgram
-{ 
-	 public static void main(String[] args){
-	  
-	   System.out.println("this is my first program");
-	 
-	 }
-
+class FirstProgram 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("This is a demo program");
+	}
 }

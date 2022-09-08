@@ -1,0 +1,13 @@
+// Decompiled by DJ v3.5.5.77 Copyright 2003 Atanas Neshkov  Date: 08-09-2022 09:48:50
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   ConstructorDemo1.java
+
+
+class ConstructorDemo1
+{
+
+    ConstructorDemo1()
+    {
+    }
+}

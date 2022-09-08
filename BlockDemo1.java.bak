@@ -1,0 +1,36 @@
+class TestBlock1
+{
+	static int   a;
+
+	static{
+	    System.out.println("static block  --TestBlock1");
+	} 
+
+
+	{
+	    System.out.println("non static block -TestBlock1");
+	}
+
+}
+
+
+class BlockDemo1 
+{
+	
+	{
+	    System.out.println("non static block -BlockDemo1");
+	}
+
+	static{
+	   System.out.println("static block- BlockDemo1");
+	}
+
+	public static void main(String[] args) 
+	{
+		  BlockDemo1  obj1=new BlockDemo1();
+
+		  BlockDemo1  obj2=new BlockDemo1();
+
+		   TestBlock1.a=100;
+	}
+}
