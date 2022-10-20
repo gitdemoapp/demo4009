@@ -1,0 +1,8 @@
+class WithoutImport 
+{
+	public static void main(String[] args) 
+	{
+		TestFile  obj1=new TestFile();
+		obj1.m1();
+	}
+}

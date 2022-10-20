@@ -1,0 +1,28 @@
+class Addition 
+{
+	int   a;
+	int   b;
+
+	void  add(){
+	   System.out.println("a+b ="+(a+b));
+	}
+
+   Addition(int  a,int  b){
+        this.a=a;
+		this.b=b;
+
+		 System.out.println(this.hashCode());
+   }
+
+	public static void main(String[] args) 
+	{
+		  Addition  a1=new Addition(10,20);
+		  a1.add();
+
+		   System.out.println("a1.hashCode()"+a1.hashCode());
+
+		  Addition  a2=new Addition(100,200);
+           a2.add();
+		    System.out.println("a2.hashCode()"+a2.hashCode());
+	}
+}

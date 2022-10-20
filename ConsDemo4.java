@@ -1,0 +1,24 @@
+class TestCons4
+{
+
+	static int  a=10;
+   
+}
+class ConsDemo4 extends TestCons4
+{
+
+	int   a=100;
+
+    void  m1(){
+	    
+		 System.out.println(super.a);
+	
+	}
+
+	public static void main(String[] args) 
+	{
+		ConsDemo4  obj1=new ConsDemo4();
+        obj1.m1();
+
+	}
+}

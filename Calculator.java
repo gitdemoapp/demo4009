@@ -1,145 +1,15 @@
-/*
-   Polymorphism:
-   --------------
-
-   one name different form is concept of polymorphism.
-
-   Why?
-
-   To acheive flexibility 
-
-   We can achieve Polymorpshism  by 2 ways:
-
-		|-compiletime Polymorphism | early binding | static Polymorphism
-
-		     |-Overloading:
-			 ---------------
-
-			 Old programming language like C:
-			 --------------------------------
-              sum(int  a,int  b)
-
-			  sum(int  a, int  b,int  c)
-
-			  To overcome this problem we can use in java :
-
-			  two or more than 2 methods with same name and different argument
-			  
-			  is called overloading.
-
-
-			  eg:
-
-			  class Calculator{
-			  
-			      void  sum(int  a){
-				  
-				  }
-
-				  void  sum(float a){
-				  
-				  }
-
-				  void  sum(double a){
-				  
-				  }
-
-				  void div(){
-				  
-				  }
-
-				  void div(int  a){
-				  
-				  }
-
-				  public static void main(String[] args){
-				    Calculator c1=new Calculator();
-					c1.sum(10);
-				  
-				  }
-			  }
-
-
-Case-1:-  Automatic promotions in oveloading:
---------------------------------------------
-Case-2:-  byte--->short--->int ---->long--->float--->double
-
-Case-3:-
-
-
-
-
-
-
-
-
-
-			 |-Method hiding
-==================================================================================
-		|-runtime Polymorphism | late binding | dynamic Polymorphism
-			 |-Overriding
-
-
-
-             class Calculator{
-
-
-				  void  sum(float a,int   b){
-				      System.out.println(" float  , int  ");
-				  }
-			  
-			      void  sum(int  a,float  f){
-				      System.out.println("int  , float");
-				  }
-
-				  
-
-				  public static void main(String[] args){
-
-				    Calculator c1=new Calculator();
-
-					//c1.sum(10,10);
-
-					//c1.sum(10,10.5);
-
-					// c1.sum(10,10L);
-
-                      c1.sum(10.5f,100);
-
-				  
-				  }
-			  }
-
-			  */
-class Parent
+class Calculator 
 {
+	public static void main(String[] args) 
+	{
+		java.util.Scanner sc=new java.util.Scanner(System.in);
+		System.out.println("enter a no");
+		int  a=sc.nextInt();
 
-}
+		System.out.println("enter a no");
+		int  b=sc.nextInt();
 
-class Child extends Parent
-{
-
-}
-
-class OLDemo3
-{
-	void m1(int   a){
-	     System.out.println(" int  ");
-	}
-
-	void m1(float   b){
-	      System.out.println(" float");
-	}
-
-	public static void main(String[] args){
-	    OLDemo3  obj1=new OLDemo3();
-
-		int  x=100;
-
-		obj1.m1(x);
-
-        float  y=100.0f;
-		obj1.m1(y);
+		System.out.println("Multiplication of a and b is ::"+(a*b));
+		
 	}
 }
-

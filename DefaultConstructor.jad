@@ -1,0 +1,18 @@
+// Decompiled by DJ v3.5.5.77 Copyright 2003 Atanas Neshkov  Date: 09-09-2022 10:13:21
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   DefaultConstructor.java
+
+
+class DefaultConstructor
+{
+
+    DefaultConstructor()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        DefaultConstructor defaultconstructor = new DefaultConstructor();
+    }
+}

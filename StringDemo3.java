@@ -1,0 +1,69 @@
+class StringDemo3 
+{
+	public static void main(String[] args) 
+	{
+		final String  s1="java";
+
+		String  s2="java";
+
+		System.out.println("s1==>"+s1);
+
+		System.out.println("s2==>"+s2);
+
+		System.out.println("s2==s1 ==>"+(s2==s1));
+
+
+		String  s3=new String("java");
+
+		String  s4=new String("java");
+
+
+		System.out.println("s3==>"+s3);
+
+		System.out.println("s4==>"+s4);
+
+		System.out.println("s3==s4 ==>"+(s3==s4));
+
+		System.out.println("s1==s4 ==>"+(s1==s4));
+
+         String s8="program";
+
+		String s5=s1+s8;
+
+		String  s6="javaprogram";
+
+
+		System.out.println("s5==>"+s5);
+
+		System.out.println("s6==>"+s6);
+
+		System.out.println("s5==s6 ==>"+(s5==s6));
+
+		String s7="javaprogram";
+
+		System.out.println("s7==>"+s7);
+
+		System.out.println("s7==s6 ==>"+(s7==s6));
+
+		String  s9=new String("program");
+
+
+		System.out.println("s8==>"+s8);
+
+		System.out.println("s9==>"+s9);
+
+		System.out.println("s8==s9 ==>"+(s8==s9));
+
+
+		String s10=s2.concat(" at bytecode");
+
+		String  s11="java at bytecode";
+
+		System.out.println("s10==>"+s10);
+
+		System.out.println("s11==>"+s11);
+
+		System.out.println("s10==s11 ==>"+(s10==s11));
+
+	}
+}

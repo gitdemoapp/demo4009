@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form Validation</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Login</legend>
+
+            <form name="loginForm" onsubmit="return login()">
+
+                <table>
+                    <tr>
+                        <td>User Name</td>
+                        <td><input type="text" name="uname" placeholder="Enter User Name"></td>
+                        <td><span id="uname_errors" style="color: red;"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="text" name="upwd" placeholder="Enter Password"></td>
+                        <td><span id="upwd_errors" style="color: red;"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="submit" value="Login">
+                        </td>
+                        <td><input type="reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <script>
+            function login(){
+                let uname = document.forms["loginForm"]["uname"].value;         
+                let uname_errors = document.getElementById("uname_errors");
+                let uname_arr = [];
+                if(/^$/.test(uname) || uname==null){
+                    uname_arr.push("cant left blank");
+                }else if(!/[A-Z]\w{4,6}$/.test(uname)){
+                    uname_arr.push("must follow pattern");
+                }
+                
+                let upwd = document.forms["loginForm"]["upwd"].value;         
+                let upwd_errors = document.getElementById("upwd_errors");
+                let upwd_arr = [];
+                
+                if(/^$/.test(upwd)){
+                    upwd_arr.push("cant left blank");
+                }else if(!/^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(upwd)){
+                    upwd_arr.push("must follow pattern");
+                }
+                
+                uname_errors.innerText = uname_arr.join(",");
+                upwd_errors.innerText = upwd_arr.join(",");
+                return false;
+            }
+        </script>
+    </body>
+</html>

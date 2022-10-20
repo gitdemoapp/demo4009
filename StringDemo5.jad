@@ -1,0 +1,18 @@
+// Decompiled by DJ v3.5.5.77 Copyright 2003 Atanas Neshkov  Date: 30-09-2022 09:52:44
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   StringDemo5.java
+
+
+class StringDemo5
+{
+
+    StringDemo5()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        String s = "java by kayum sir";
+    }
+}

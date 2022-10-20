@@ -1,0 +1,18 @@
+import static java.lang.System.out;
+import static java.lang.System.in;
+import static java.lang.Integer.MAX_VALUE;//2-static explicit
+import static java.lang.Byte.*;//3 - static implicit
+import java.util.Scanner;
+import static java.lang.Math.sqrt;
+class StaticImportDemo1 
+{
+	public static void main(String[] args) 
+	{
+		int MAX_VALUE=10;//--1
+        Scanner s=new Scanner(in);
+		out.println(MAX_VALUE);
+
+		double  d1=sqrt(9);
+		out.println(d1);
+	}
+}

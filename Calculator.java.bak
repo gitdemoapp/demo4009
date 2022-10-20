@@ -124,11 +124,11 @@ class Child extends Parent
 class OLDemo3
 {
 	void m1(int   a){
-	
+	     System.out.println(" int  ");
 	}
 
 	void m1(float   b){
-	
+	      System.out.println(" float");
 	}
 
 	public static void main(String[] args){

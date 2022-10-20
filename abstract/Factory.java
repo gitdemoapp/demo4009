@@ -2,21 +2,21 @@ class Factory
 {
 	static Area getAreaObject(String  area){
 
-      if(area.equals("circle")){
+      if(area.equalsIgnoreCase("circle")){
 	       return new Circle(); 
 	  }
 
-	  else if(area.equals("square")){
+	  else if(area.equalsIgnoreCase("square")){
            return new Square();
 	  }
 
-	  else if(area.equals("triangle")){
+	  else if(area.equalsIgnoreCase("triangle")){
            return new Trianle();
 	  }
 
 	  else{
 	     
-		 return null;
+		 return new NoSuchAreaAvialble();
 	  }
 	
 	  }//getAreaObject

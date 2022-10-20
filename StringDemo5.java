@@ -26,8 +26,43 @@
 
    8. public String replace(char  old,char  new);
    9. public String  toLowerCase()
-   10.  public String  toUpperCase()
+   10.public String  toUpperCase()
+   11. public string trim()
+   12.  
+   
 
+
+   final vs immutability:
+   ----------------------
+
+   final:--  variable ,method , class 
+
+   immutable--->object
+
+   ==========================================================================
+
+   SCP  -->
+
+   Immutable?
+
+   =========================================
+
+   StringBuffer class:
+   -------------------
+
+   StringBuffer  sb1=new StringBuffer("java");   //sb1===> javapythonphp
+  
+   sb1.append("python");
+
+    sb1.append("php");
+
+
+String Buffer class constructor:
+
+
+StringBuffer(){
+
+}
 
 
 
