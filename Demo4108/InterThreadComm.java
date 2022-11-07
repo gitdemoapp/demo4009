@@ -3,9 +3,10 @@ package com.bytecode.multithreading;
 class Producer extends Thread {
 
 	int total = 0;
-
+   
 	@Override
 	public void run() {
+		System.out.println("hello");
 		synchronized (this) {
 			System.out.println("Calculating total by producer");
           for (int i = 0; i < 50; i++) {
