@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   		http://www.springframework.org/schema/beans/spring-beans.xsd
+	   		http://www.springframework.org/schema/context
+	   		http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean id="st1"
+		class="com.bytecode.springdemo.collectioninjection.Student">
+
+         <property name="marks">
+         
+            <list>
+             <value>80</value>
+             <value>70</value>
+             <value>90</value>
+             <value>60</value>
+             <value>500</value>
+            </list>
+         </property>
+         
+          <property name="names">
+         
+            <list>
+             <value>Raja</value>
+             <value>Rani</value>
+            </list>
+         </property>
+
+	</bean>
+
+</beans>
+
