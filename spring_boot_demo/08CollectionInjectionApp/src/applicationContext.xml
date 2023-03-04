@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   		http://www.springframework.org/schema/beans/spring-beans.xsd
+	   		http://www.springframework.org/schema/context
+	   		http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean id="user1"
+		class="com.bytecode.springdemo.collectioninjection.User">
+
+         <property name="phones">
+         
+            <set>
+             <value>9794687277</value>
+             <value>9794687278</value>
+             <value>9794687279</value>
+            </set>
+         </property>
+	</bean>
+	
+	<bean id="college1" class="com.bytecode.springdemo.collectioninjection.College">
+	
+	    <property name="fucultySubjects">
+	       <map>
+	        <entry key="Raja" value="Core Java"/>
+	         <entry key="Rani" value="Advanced Java"/>
+	       </map>
+	    </property>
+	    
+	     <property name="fucultyPhoneNumbers">
+	       <map>
+	        <entry key="Raja" value="9794687277"/>
+	         <entry key="Rani" value="Advanced Java"/>
+	       </map>
+	    </property>
+	</bean>
+	
+	<bean id="ep" class="com.bytecode.springdemo.collectioninjection.EmployeeProfile">
+	   <property name="empDesg">
+	      <props>
+	        <prop key="Raja">Trainer</prop>
+	        <prop key="Rani">Trainer of Raja</prop>
+	      </props>
+	   </property>
+	</bean>
+
+</beans>
+
